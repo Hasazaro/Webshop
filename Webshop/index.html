@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUMBO - Verse producten</title>
+    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo">
+            <i class="bx bxs-basket"></i> JUMBO
+        </a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <ul class="navbar" id="navbar">
+            <li><a href="#home" class="home-active">Home</a></li>
+            <li><a href="#categories">Categorieën</a></li>
+            <li><a href="#products">Producten</a></li>
+            <li><a href="Login-and-logout/Registration.html">Registreren</a></li>
+        </ul>
+        <div class="header-right">
+            <div class="profile">
+                <img src="images/img1.png" alt="Profiel">
+                <span>JUMBO</span>
+            </div>
+            <button class="cart-btn" id="cart-toggle">
+                <i class='bx bx-cart'></i>
+                <span id="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Cart Dropdown -->
+    <div class="cart-container" id="cart-container">
+        <h2><i class='bx bx-cart'></i> Winkelwagen</h2>
+        <ul id="cart-items">
+            <li class="cart-empty">Je winkelwagen is leeg</li>
+        </ul>
+        <button id="checkout">Afrekenen <i class='bx bx-right-arrow-alt'></i></button>
+    </div>
+
+    <!-- Hero Slider -->
+    <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide container">
+                <div class="home-text">
+                    <span class="tag">Vers & Lekker</span>
+                    <h1>Ons prijswinnende<br><span>appeltaartje</span></h1>
+                    <p>Om van te genieten bij elke gelegenheid</p>
+                    <a href="#products" class="btn">Shop nu <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <img src="images/home1.avif" alt="Appeltaart">
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide container">
+                <div class="home-text">
+                    <span class="tag">Dagverse producten</span>
+                    <h1>Verse groenten<br><span>elke dag</span></h1>
+                    <p>Rechtstreeks van de boer naar jouw tafel</p>
+                    <a href="#categories" class="btn">Bekijk alles <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <img src="images/home2.png" alt="Verse groenten">
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide container">
+                <div class="home-text">
+                    <span class="tag">Speciale aanbiedingen</span>
+                    <h1>Beste kwaliteit<br><span>laagste prijs</span></h1>
+                    <p>Elke dag de beste deals voor jou</p>
+                    <a href="#products" class="btn">Bekijk aanbiedingen <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+                <img src="images/home3.png" alt="Aanbiedingen">
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+        <div class="section-wrapper">
+            <div class="heading">
+                <div>
+                    <h1>Onze <span>categorieën</span></h1>
+                    <p>Kies uit ons brede assortiment</p>
+                </div>
+                <a href="Categories.php" class="btn">Alles bekijken <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+            <div class="categories-container">
+                <a href="fruiten.php" class="box box1">
+                    <img src="images/box1.png" alt="Fruit">
+                    <h2>Fruit</h2>
+                    <span>Vers fruit</span>
+                    <i class='bx bx-right-arrow-alt'></i>
+                </a>
+                <a href="groenten.php" class="box box2">
+                    <img src="images/box2.png" alt="Groenten">
+                    <h2>Groenten</h2>
+                    <span>Verse groenten</span>
+                    <i class='bx bx-right-arrow-alt'></i>
+                </a>
+                <a href="drinken.php" class="box box3">
+                    <img src="images/box3.png" alt="Dranken">
+                    <h2>Dranken</h2>
+                    <span>Frisdrank & meer</span>
+                    <i class='bx bx-right-arrow-alt'></i>
+                </a>
+                <a href="brood.php" class="box box4">
+                    <img src="images/box4.png" alt="Brood">
+                    <h2>Brood</h2>
+                    <span>Vers gebakken</span>
+                    <i class='bx bx-right-arrow-alt'></i>
+                </a>
+                <a href="spices.php" class="box box5">
+                    <img src="images/box5.png" alt="Kruiden">
+                    <h2>Kruiden</h2>
+                    <span>Specerijen</span>
+                    <i class='bx bx-right-arrow-alt'></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="products">
+        <div class="section-wrapper">
+            <div class="heading">
+                <div>
+                    <h1>Populaire <span>producten</span></h1>
+                    <p>Onze best verkochte items</p>
+                </div>
+                <a href="products.php" class="btn">Meer bekijken <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+            <div class="products-container">
+                <div class="box">
+                    <i class='bx bx-like'></i>
+                    <img src="images/Product1.png" alt="Groene appel">
+                    <span class="category-tag">Verse groenten</span>
+                    <h2>Groene appel</h2>
+                    <h3 class="price">€2.99 <span>/ kg</span></h3>
+                    <i class='bx bx-cart-alt'></i>
+                </div>
+                <div class="box">
+                    <i class='bx bx-like'></i>
+                    <img src="images/banana.png" alt="Banaan">
+                    <span class="category-tag">Vers fruit</span>
+                    <h2>Bananen</h2>
+                    <h3 class="price">€1.49 <span>/ stuk</span></h3>
+                    <i class='bx bx-cart-alt'></i>
+                </div>
+                <div class="box">
+                    <i class='bx bx-like'></i>
+                    <img src="images/orange.png" alt="Sinaasappel">
+                    <span class="category-tag">Vers fruit</span>
+                    <h2>Sinaasappels</h2>
+                    <h3 class="price">€3.49 <span>/ kg</span></h3>
+                    <i class='bx bx-cart-alt'></i>
+                </div>
+                <div class="box">
+                    <i class='bx bx-like'></i>
+                    <img src="images/tomato.jpg" alt="Tomaat">
+                    <span class="category-tag">Verse groenten</span>
+                    <h2>Tomaten</h2>
+                    <h3 class="price">€2.29 <span>/ kg</span></h3>
+                    <i class='bx bx-cart-alt'></i>
+                </div>
+                <div class="box">
+                    <i class='bx bx-like'></i>
+                    <img src="images/onion.jpg" alt="Ui">
+                    <span class="category-tag">Verse groenten</span>
+                    <h2>Uien</h2>
+                    <h3 class="price">€0.99 <span>/ kg</span></h3>
+                    <i class='bx bx-cart-alt'></i>
+                </div>
+                <div class="box">
+                    <i class='bx bx-like'></i>
+                    <img src="images/Potato.png" alt="Aardappel">
+                    <span class="category-tag">Verse groenten</span>
+                    <h2>Aardappelen</h2>
+                    <h3 class="price">€1.79 <span>/ kg</span></h3>
+                    <i class='bx bx-cart-alt'></i>
+                </div>
+                <div class="box">
+                    <i class='bx bx-like'></i>
+                    <img src="images/Grapes.jpg" alt="Druiven">
+                    <span class="category-tag">Vers fruit</span>
+                    <h2>Druiven</h2>
+                    <h3 class="price">€4.99 <span>/ kg</span></h3>
+                    <i class='bx bx-cart-alt'></i>
+                </div>
+                <div class="box">
+                    <i class='bx bx-like'></i>
+                    <img src="images/Product1.png" alt="Product">
+                    <span class="category-tag">Aanbieding</span>
+                    <h2>Seizoensproduct</h2>
+                    <h3 class="price">€1.99 <span>/ stuk</span></h3>
+                    <i class='bx bx-cart-alt'></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <!-- Brand -->
+            <div class="footer-brand">
+                <a href="index.html" class="logo"><i class="bx bxs-basket"></i> JUMBO</a>
+                <p>Jouw lokale supermarkt voor verse producten, dagelijkse boodschappen en meer. Kwaliteit en versheid staan bij ons centraal.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                    <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class='bx bxl-whatsapp'></i></a>
+                </div>
+            </div>
+            <!-- Categorieën -->
+            <div class="footer-col">
+                <h3>Categorieën</h3>
+                <ul>
+                    <li><a href="fruiten.php">Fruit</a></li>
+                    <li><a href="groenten.php">Groenten</a></li>
+                    <li><a href="drinken.php">Dranken</a></li>
+                    <li><a href="brood.php">Brood</a></li>
+                    <li><a href="spices.php">Kruiden</a></li>
+                </ul>
+            </div>
+            <!-- Informatie -->
+            <div class="footer-col">
+                <h3>Informatie</h3>
+                <ul>
+                    <li><a href="#">Over ons</a></li>
+                    <li><a href="#">Bezorging</a></li>
+                    <li><a href="#">Retourneren</a></li>
+                    <li><a href="#">Privacybeleid</a></li>
+                    <li><a href="#">Algemene voorwaarden</a></li>
+                </ul>
+            </div>
+            <!-- Contact -->
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <div class="contact-item">
+                    <i class='bx bx-map'></i>
+                    <span>Marktstraat 1, Amsterdam</span>
+                </div>
+                <div class="contact-item">
+                    <i class='bx bx-phone'></i>
+                    <span>+31 20 123 4567</span>
+                </div>
+                <div class="contact-item">
+                    <i class='bx bx-envelope'></i>
+                    <span>info@jumbo.nl</span>
+                </div>
+                <div class="contact-item">
+                    <i class='bx bx-time'></i>
+                    <span>Ma–Za: 08:00–21:00</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 JUMBO Supermarkt. Alle rechten voorbehouden.</p>
+            <p>Gemaakt met <i class='bx bxs-heart' style="color:#f5c518;"></i> voor onze klanten</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
