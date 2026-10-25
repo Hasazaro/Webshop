@@ -1,0 +1,4 @@
+# Images uploaded through the admin panel are not part of the code.
+*
+!.gitignore
+!.htaccess
