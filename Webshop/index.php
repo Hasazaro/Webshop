@@ -12,30 +12,46 @@ require __DIR__ . '/includes/header.php';
     <div class="swiper-wrapper">
         <div class="swiper-slide container">
             <div class="home-text">
-                <span class="tag">Vers & Lekker</span>
-                <h1>Ons prijswinnende<br><span>appeltaartje</span></h1>
-                <p>Om van te genieten bij elke gelegenheid</p>
+                <span class="tag">Bezorgd aan je setup</span>
+                <h1>Snacks voor je<br><span>volgende match</span></h1>
+                <p>Chips, energydrinks, noodles en pizza, bezorgd bij je gaming café of thuis. Jij blijft in de game.</p>
                 <a href="#products" class="btn">Shop nu <i class="bx bx-right-arrow-alt"></i></a>
             </div>
-            <img src="images/home1.avif" alt="Appeltaart">
+            <!-- Decorative icons only, so screen readers skip them (aria-hidden) -->
+            <div class="hero-visual" aria-hidden="true">
+                <i class="bx bxs-joystick hero-icon"></i>
+                <span class="hero-badge badge-1"><i class="bx bxs-pizza"></i></span>
+                <span class="hero-badge badge-2"><i class="bx bxs-bolt"></i></span>
+                <span class="hero-badge badge-3"><i class="bx bxs-cookie"></i></span>
+            </div>
         </div>
         <div class="swiper-slide container">
             <div class="home-text">
-                <span class="tag">Dagverse producten</span>
-                <h1>Verse groenten<br><span>elke dag</span></h1>
-                <p>Rechtstreeks van de boer naar jouw tafel</p>
-                <a href="#categories" class="btn">Bekijk alles <i class="bx bx-right-arrow-alt"></i></a>
+                <span class="tag">Late night</span>
+                <h1>Energy voor<br><span>de hele nacht</span></h1>
+                <p>We bezorgen elke dag tot 03:00. Voor die ene ranked game die toch nog drie werd.</p>
+                <a href="category.php?id=2" class="btn">Bekijk energydrinks <i class="bx bx-right-arrow-alt"></i></a>
             </div>
-            <img src="images/home2.png" alt="Verse groenten">
+            <div class="hero-visual" aria-hidden="true">
+                <i class="bx bxs-bolt hero-icon"></i>
+                <span class="hero-badge badge-1"><i class="bx bxs-moon"></i></span>
+                <span class="hero-badge badge-2"><i class="bx bxs-time-five"></i></span>
+                <span class="hero-badge badge-3"><i class="bx bxs-rocket"></i></span>
+            </div>
         </div>
         <div class="swiper-slide container">
             <div class="home-text">
-                <span class="tag">Speciale aanbiedingen</span>
-                <h1>Beste kwaliteit<br><span>laagste prijs</span></h1>
-                <p>Elke dag de beste deals voor jou</p>
-                <a href="#products" class="btn">Bekijk aanbiedingen <i class="bx bx-right-arrow-alt"></i></a>
+                <span class="tag">Squad deals</span>
+                <h1>Bestel samen,<br><span>betaal minder</span></h1>
+                <p>Pizza en noodles voor je hele team. Ideaal voor LAN-party's en toernooien in je gaming café.</p>
+                <a href="products.php" class="btn">Bekijk producten <i class="bx bx-right-arrow-alt"></i></a>
             </div>
-            <img src="images/home3.png" alt="Aanbiedingen">
+            <div class="hero-visual" aria-hidden="true">
+                <i class="bx bxs-trophy hero-icon"></i>
+                <span class="hero-badge badge-1"><i class="bx bxs-bowl-hot"></i></span>
+                <span class="hero-badge badge-2"><i class="bx bxs-invader"></i></span>
+                <span class="hero-badge badge-3"><i class="bx bxs-pizza"></i></span>
+            </div>
         </div>
     </div>
     <div class="swiper-button-next"></div>

@@ -22,7 +22,7 @@ $showCustomer = $showCustomer ?? false;
                     <?php if ($showCustomer): ?><td><?= e($order['full_name']) ?></td><?php endif; ?>
                     <td><?= (int) $order['item_count'] ?></td>
                     <td><?= format_price($order['total']) ?></td>
-                    <td><a href="<?= APPURL ?>/order.php?id=<?= (int) $order['id'] ?>" class="btn-small">Bekijken</a></td>
+                    <td><a href="<?= APPURL ?>/order.php?id=<?= (int) $order['id'] ?>" class="btn btn-sm">Bekijken</a></td>
                 </tr>
             <?php endforeach; ?>
             <?php if (!$orders): ?>

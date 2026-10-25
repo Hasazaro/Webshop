@@ -1,10 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     // ===== Swiper Slider =====
+    // No autoplay for visitors who asked their system for less motion
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (document.querySelector('.swiper')) {
         new Swiper('.swiper', {
             loop: true,
-            autoplay: { delay: 4000, disableOnInteraction: false },
+            autoplay: reduceMotion ? false : { delay: 5000, disableOnInteraction: true },
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -28,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // ===== Cart =====
     // The cart is a list of { id, name, price, qty }, saved in localStorage
     // so it is still there after a page reload.
-    const CART_KEY = 'jumbo-cart';
+    const CART_KEY = 'webshop-cart';
     const cartToggle = document.getElementById('cart-toggle');
     const cartContainer = document.getElementById('cart-container');
     const cartCountEl = document.getElementById('cart-count');

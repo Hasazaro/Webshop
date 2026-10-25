@@ -81,8 +81,8 @@ require __DIR__ . '/../includes/header.php';
                     <input type="password" name="password_repeat" autocomplete="new-password" required>
                 </label>
             </div>
-            <div class="button">
-                <input type="submit" value="Registreren">
+            <div class="form-actions">
+                <button type="submit" class="btn btn-block">Registreren</button>
             </div>
         </form>
 

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-labelledby="title">
+  <title id="title">Cup instant noodles</title>
+  <!-- steam -->
+  <g fill="none" stroke="#c9d6d0" stroke-width="6" stroke-linecap="round" opacity="0.7">
+    <path d="M115 62c-12-14 12-22 0-38"/>
+    <path d="M150 54c-12-14 12-22 0-38"/>
+    <path d="M185 62c-12-14 12-22 0-38"/>
+  </g>
+  <!-- chopsticks -->
+  <g stroke-linecap="round">
+    <line x1="168" y1="118" x2="262" y2="34" stroke="#a8743f" stroke-width="9"/>
+    <line x1="182" y1="122" x2="272" y2="50" stroke="#c58b4f" stroke-width="9"/>
+  </g>
+  <!-- noodles on top -->
+  <ellipse cx="150" cy="112" rx="92" ry="22" fill="#f4c35a"/>
+  <g fill="none" stroke="#e0a43a" stroke-width="5" stroke-linecap="round">
+    <path d="M78 110c14-10 28 10 42 0s28 10 42 0 28 10 42 0 22 8 30 2"/>
+    <path d="M90 120c14-10 28 10 42 0s28 10 42 0 28 10 42 0"/>
+  </g>
+  <!-- toppings -->
+  <circle cx="118" cy="104" r="9" fill="#5fbf5f"/>
+  <circle cx="186" cy="116" r="8" fill="#5fbf5f"/>
+  <ellipse cx="150" cy="100" rx="14" ry="7" fill="#f08a6c"/>
+  <!-- cup -->
+  <path d="M56 116h188l-24 150a14 14 0 0 1-14 12H94a14 14 0 0 1-14-12z" fill="#e2453c"/>
+  <path d="M56 116h188l-3 18H59z" fill="#c23a32"/>
+  <!-- label -->
+  <path d="M70 170h160l-7 52H77z" fill="#fff4e0"/>
+  <text x="150" y="203" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#c23a32">NOODLES</text>
+  <!-- lightning sticker (gaming touch) -->
+  <circle cx="214" cy="244" r="18" fill="#39d353"/>
+  <path d="M217 230l-12 17h9l-4 12 13-18h-9z" fill="#0b1a10"/>
+</svg>

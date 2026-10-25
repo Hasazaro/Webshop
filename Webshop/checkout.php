@@ -9,8 +9,8 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 csrf_check();
 
-// Show an error on the products page and stop.
-function checkout_fail(string $message): never
+// Show an error on the products page and stop (redirect() ends the script).
+function checkout_fail(string $message): void
 {
     set_flash('error', $message);
     redirect('products.php');

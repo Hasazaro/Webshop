@@ -38,10 +38,10 @@ require __DIR__ . '/../includes/header.php';
                         <tr>
                             <td><img src="<?= APPURL ?>/images/<?= e($product['image']) ?>" alt="" class="admin-thumb"></td>
                             <td><?= e($product['name']) ?></td>
-                            <td><?= e(CATEGORIES[$product['category']] ?? 'Onbekend') ?></td>
+                            <td><?= e(CATEGORIES[$product['category']]['name'] ?? 'Onbekend') ?></td>
                             <td><?= format_price($product['price']) ?></td>
                             <td class="admin-actions">
-                                <a href="product-form.php?id=<?= (int) $product['id'] ?>" class="btn-small">
+                                <a href="product-form.php?id=<?= (int) $product['id'] ?>" class="btn btn-sm">
                                     <i class="bx bx-edit"></i> Wijzigen
                                 </a>
                                 <!-- Deleting changes data, so it is a POST form (with CSRF token), never a plain link -->
@@ -49,7 +49,7 @@ require __DIR__ . '/../includes/header.php';
                                       onsubmit="return confirm('Weet je zeker dat je <?= e(addslashes($product['name'])) ?> wilt verwijderen?');">
                                     <?= csrf_field() ?>
                                     <input type="hidden" name="id" value="<?= (int) $product['id'] ?>">
-                                    <button type="submit" class="btn-small btn-danger">
+                                    <button type="submit" class="btn btn-sm btn-danger">
                                         <i class="bx bx-trash"></i> Verwijderen
                                     </button>
                                 </form>

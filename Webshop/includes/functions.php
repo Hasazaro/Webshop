@@ -14,6 +14,15 @@ function redirect(string $path): void
     exit;
 }
 
+// URL of a CSS/JS file with its last-changed time, e.g. style.css?v=1729851234.
+// When the file changes, the URL changes, so browsers download the new version instead of an old cached one.
+function asset(string $path): string
+{
+    $file = __DIR__ . '/../' . $path;
+    $version = is_file($file) ? filemtime($file) : 0;
+    return APPURL . '/' . $path . '?v=' . $version;
+}
+
 // Format a price the Dutch way: 1.5 -> "€ 1,50".
 function format_price(float|string $amount): string
 {

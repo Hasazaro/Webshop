@@ -114,9 +114,9 @@ require __DIR__ . '/../includes/header.php';
                     <span class="details">Categorie</span>
                     <select name="category" required>
                         <option value="">Kies een categorie</option>
-                        <?php foreach (CATEGORIES as $number => $name): ?>
+                        <?php foreach (CATEGORIES as $number => $category): ?>
                             <option value="<?= $number ?>" <?= (int) $product['category'] === $number ? 'selected' : '' ?>>
-                                <?= e($name) ?>
+                                <?= e($category['name']) ?>
                             </option>
                         <?php endforeach; ?>
                     </select>
@@ -136,8 +136,8 @@ require __DIR__ . '/../includes/header.php';
                     </div>
                 <?php endif; ?>
             </div>
-            <div class="button">
-                <input type="submit" value="<?= $isEdit ? 'Wijzigingen opslaan' : 'Product toevoegen' ?>">
+            <div class="form-actions">
+                <button type="submit" class="btn btn-block"><?= $isEdit ? 'Wijzigingen opslaan' : 'Product toevoegen' ?></button>
             </div>
         </form>
 

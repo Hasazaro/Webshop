@@ -59,8 +59,8 @@ require __DIR__ . '/../includes/header.php';
                     <input type="checkbox" id="show-password"> Wachtwoord tonen
                 </label>
             </div>
-            <div class="button">
-                <input type="submit" value="Inloggen">
+            <div class="form-actions">
+                <button type="submit" class="btn btn-block">Inloggen</button>
             </div>
         </form>
 
